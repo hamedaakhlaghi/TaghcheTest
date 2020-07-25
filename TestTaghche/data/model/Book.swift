@@ -10,6 +10,7 @@ class Book: Mappable {
     var authors = [Author]()
     var rating: Double = 0.0
     var beforeOffPrice: Double = 0
+   
     required convenience init?(map: Map) {
         self.init()
     }
@@ -23,5 +24,4 @@ class Book: Mappable {
         rating <- map["rating"]
         beforeOffPrice <- map["beforeOffPrice"]
     }
-    
 }

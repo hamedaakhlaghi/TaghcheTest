@@ -2,7 +2,9 @@
 import Foundation
 import RxSwift
 import RxCocoa
+
 class BookListViewModel{
+    
     var bookListResponse = BehaviorSubject<[Book]>(value:[])
     var dataError = PublishSubject<Error>()
     

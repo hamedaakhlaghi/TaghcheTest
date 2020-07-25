@@ -3,6 +3,7 @@ import Foundation
 import Alamofire
 
 class BookRestRepository: BookRepositoryProtocol {
+    
     func get(query: [URLQueryItem], onDone: ((RepositoryResponse<BookListResponse>) -> ())?) {
         let urlComponent = ApiHelper.instance.newUrlComponentsInstance(path: ApiHelper.BOOK_PATH)
         urlComponent.queryItems = query
@@ -24,8 +25,6 @@ class BookRestRepository: BookRepositoryProtocol {
                 }
                 onDone?(RepositoryResponse(value: dataResponse.value, restDataResponse: dataResponse))
             }
-        
-        
     }
     
     func get(onDone: ((RepositoryResponse<BookListResponse>) -> ())?) {

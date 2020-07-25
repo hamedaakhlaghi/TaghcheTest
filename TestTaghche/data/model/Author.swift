@@ -1,7 +1,9 @@
 
 import ObjectMapper
 import Foundation
+
 class Author: Mappable {
+    
     var id = 0
     var firstName = ""
     var lastName = ""
@@ -16,5 +18,4 @@ class Author: Mappable {
         lastName <- map["lastName"]
         type <- map["type"]
     }
-    
 }

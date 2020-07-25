@@ -4,7 +4,6 @@ import Foundation
 
 class BookListNestedResponse: Mappable {
     
-    
     var bookList: [Book]?
     var currentSpinnerPosition: Int = 0
     required convenience init?(map: Map) {
@@ -15,5 +14,4 @@ class BookListNestedResponse: Mappable {
         self.bookList <- map["booksList"]
         self.currentSpinnerPosition <- map["currentSpinnerPosition"]
     }
-    
 }
