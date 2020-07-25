@@ -1,0 +1,85 @@
+PODS:
+  - Alamofire (4.9.1)
+  - AlamofireObjectMapper (5.2.1):
+    - Alamofire (~> 4.7)
+    - ObjectMapper (~> 3.4)
+  - Cosmos (22.1.0)
+  - Differentiator (4.0.1)
+  - Kingfisher (4.10.1)
+  - ObjectMapper (3.5.2)
+  - R.swift (5.2.2):
+    - R.swift.Library (~> 5.2.0)
+  - R.swift.Library (5.2.0)
+  - Realm (5.0.0):
+    - Realm/Headers (= 5.0.0)
+  - Realm/Headers (5.0.0)
+  - RealmSwift (5.0.0):
+    - Realm (= 5.0.0)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
+  - RxSwiftExt (5.2.0):
+    - RxSwiftExt/Core (= 5.2.0)
+    - RxSwiftExt/RxCocoa (= 5.2.0)
+  - RxSwiftExt/Core (5.2.0):
+    - RxSwift (~> 5.0)
+  - RxSwiftExt/RxCocoa (5.2.0):
+    - RxCocoa (~> 5.0)
+    - RxSwiftExt/Core
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireObjectMapper
+  - Cosmos (~> 22.1)
+  - Kingfisher
+  - R.swift
+  - RealmSwift
+  - RxDataSources
+  - RxSwift
+  - RxSwiftExt
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireObjectMapper
+    - Cosmos
+    - Differentiator
+    - Kingfisher
+    - ObjectMapper
+    - R.swift
+    - R.swift.Library
+    - Realm
+    - RealmSwift
+    - RxCocoa
+    - RxDataSources
+    - RxRelay
+    - RxSwift
+    - RxSwiftExt
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AlamofireObjectMapper: 1989f690e982b71921b9253f53a4f33a9bc00d88
+  Cosmos: 2795b36ad4bbea1af3050d6d65576ed63875f86a
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  ObjectMapper: b53ae947d370bf89423e86be7d4e2d2b2a8d3f40
+  R.swift: 7c52cdc57a66840ffe6cbd8a823d732059d42a32
+  R.swift.Library: 5ba4f1631300caf9a4d890186930da85d540769d
+  Realm: 76066d333de26f97e9caedaa85ee3ff4a62ca265
+  RealmSwift: c1bdff09b422569dc6881410d9ccf712bcdb79b0
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  RxSwiftExt: 4ca80336f43c28f11a2825cdd2fc61dd6c044697
+
+PODFILE CHECKSUM: 083604a6967f63504100bc59ad1c1b4b45b3f687
+
+COCOAPODS: 1.8.4

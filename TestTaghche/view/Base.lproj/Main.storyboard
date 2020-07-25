@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="IRANSans(FaNum)-Bold.ttf">
+            <string>IRANSansFaNum-Bold</string>
+        </array>
+        <array key="IRANSans(FaNum)-Light.ttf">
+            <string>IRANSansFaNum-Light</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Book List View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="BookListViewController" customModule="TestTaghche" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PGk-OY-rDy">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="BookCell" rowHeight="209" id="HOv-tf-yKY" customClass="BookTableViewCell" customModule="TestTaghche" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="209"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HOv-tf-yKY" id="AWo-Io-Aul">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="209"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="57o-7h-XEr">
+                                                    <rect key="frame" x="280" y="20" width="124" height="169"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="asasasas" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tl9-rG-Lkm" userLabel="bookTitle">
+                                                    <rect key="frame" x="10" y="24" width="260" height="19"/>
+                                                    <fontDescription key="fontDescription" name="IRANSansFaNum-Bold" family="IRANSans(FaNum)" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48J-r8-WTl" userLabel="labelWriter">
+                                                    <rect key="frame" x="10" y="51" width="260" height="17.5"/>
+                                                    <fontDescription key="fontDescription" name="IRANSansFaNum-Light" family="IRANSans(FaNum)" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7k3-qa-7RB" userLabel="labelPublisher">
+                                                    <rect key="frame" x="129" y="72.5" width="141" height="17.5"/>
+                                                    <fontDescription key="fontDescription" name="IRANSansFaNum-Light" family="IRANSans(FaNum)" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleAspectFit" semanticContentAttribute="forceLeftToRight" translatesAutoresizingMaskIntoConstraints="NO" id="RK5-Gw-Rkw" customClass="CosmosView" customModule="Cosmos">
+                                                    <rect key="frame" x="189" y="95" width="81" height="10"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="81" id="d7I-BN-RFI"/>
+                                                        <constraint firstAttribute="height" constant="10" id="yvX-Vv-oyB"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                                            <real key="value" value="4"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                                            <color key="value" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                                            <real key="value" value="12.199999999999999"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="asasasa" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZV-TI-Ygp">
+                                                    <rect key="frame" x="10" y="169" width="119" height="20"/>
+                                                    <fontDescription key="fontDescription" name="IRANSansFaNum-Bold" family="IRANSans(FaNum)" pointSize="17"/>
+                                                    <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" name="BookCell"/>
+                                            <constraints>
+                                                <constraint firstItem="7k3-qa-7RB" firstAttribute="trailing" secondItem="48J-r8-WTl" secondAttribute="trailing" id="2xs-tn-ZEa"/>
+                                                <constraint firstItem="48J-r8-WTl" firstAttribute="trailing" secondItem="Tl9-rG-Lkm" secondAttribute="trailing" id="4Mw-jt-3BE"/>
+                                                <constraint firstItem="7k3-qa-7RB" firstAttribute="top" secondItem="48J-r8-WTl" secondAttribute="bottom" constant="4" id="5ay-gw-r62"/>
+                                                <constraint firstAttribute="trailing" secondItem="57o-7h-XEr" secondAttribute="trailing" constant="10" id="6dl-7m-bWi"/>
+                                                <constraint firstAttribute="bottom" secondItem="57o-7h-XEr" secondAttribute="bottom" constant="20" symbolic="YES" id="77D-KB-GRz"/>
+                                                <constraint firstAttribute="bottom" secondItem="eZV-TI-Ygp" secondAttribute="bottom" constant="20" id="7Rm-mb-OBU"/>
+                                                <constraint firstItem="eZV-TI-Ygp" firstAttribute="leading" secondItem="AWo-Io-Aul" secondAttribute="leading" constant="10" id="EKK-ET-lbS"/>
+                                                <constraint firstItem="57o-7h-XEr" firstAttribute="width" secondItem="AWo-Io-Aul" secondAttribute="width" multiplier="0.3" id="GZh-zf-LxJ"/>
+                                                <constraint firstItem="Tl9-rG-Lkm" firstAttribute="top" secondItem="57o-7h-XEr" secondAttribute="top" multiplier="1.2" id="Gv2-w7-IAU"/>
+                                                <constraint firstItem="7k3-qa-7RB" firstAttribute="leading" secondItem="eZV-TI-Ygp" secondAttribute="trailing" id="QVo-ao-ktv"/>
+                                                <constraint firstItem="48J-r8-WTl" firstAttribute="leading" secondItem="Tl9-rG-Lkm" secondAttribute="leading" id="QhE-ys-JtB"/>
+                                                <constraint firstItem="Tl9-rG-Lkm" firstAttribute="leading" secondItem="AWo-Io-Aul" secondAttribute="leading" constant="10" id="S0e-Mi-tjy"/>
+                                                <constraint firstItem="57o-7h-XEr" firstAttribute="leading" secondItem="Tl9-rG-Lkm" secondAttribute="trailing" constant="10" id="Tzg-d9-zvj"/>
+                                                <constraint firstItem="57o-7h-XEr" firstAttribute="top" secondItem="AWo-Io-Aul" secondAttribute="top" constant="20" symbolic="YES" id="VY3-iT-A6a"/>
+                                                <constraint firstItem="RK5-Gw-Rkw" firstAttribute="top" secondItem="7k3-qa-7RB" secondAttribute="bottom" constant="5" id="WYP-8g-KY8"/>
+                                                <constraint firstItem="48J-r8-WTl" firstAttribute="top" secondItem="Tl9-rG-Lkm" secondAttribute="bottom" constant="8" id="WZH-oj-Npk"/>
+                                                <constraint firstItem="RK5-Gw-Rkw" firstAttribute="leading" secondItem="eZV-TI-Ygp" secondAttribute="trailing" constant="60" id="lqg-at-CM0"/>
+                                                <constraint firstItem="RK5-Gw-Rkw" firstAttribute="trailing" secondItem="7k3-qa-7RB" secondAttribute="trailing" id="p15-PE-uvd"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cvBookRate" destination="RK5-Gw-Rkw" id="AlL-RU-Kl6"/>
+                                            <outlet property="imageViewBook" destination="57o-7h-XEr" id="Gfm-cG-SPP"/>
+                                            <outlet property="labelBookPrice" destination="eZV-TI-Ygp" id="ed7-nq-cxh"/>
+                                            <outlet property="labelBookTitle" destination="Tl9-rG-Lkm" id="Ec2-wy-5Ve"/>
+                                            <outlet property="labelPublisher" destination="7k3-qa-7RB" id="6B3-sz-SEl"/>
+                                            <outlet property="labelWriter" destination="48J-r8-WTl" id="eGM-ua-3dy"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="PGk-OY-rDy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2ud-XB-JV6"/>
+                            <constraint firstItem="PGk-OY-rDy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Gvn-CM-ITx"/>
+                            <constraint firstItem="PGk-OY-rDy" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="iO0-H2-lvI"/>
+                            <constraint firstItem="PGk-OY-rDy" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="vfB-5e-hS0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="PGk-OY-rDy" id="SVJ-EE-Rja"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="BookCell">
+            <color red="0.98815232519999996" green="0.98844200370000002" blue="0.97995060680000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
